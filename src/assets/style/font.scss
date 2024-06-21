@@ -1,0 +1,12 @@
+$Lores9: ('Narrow-Regular', 500),
+         ('Narrow-Bold', 600),
+         ('Wide-Regular', 400),
+         ('Wide-Bold', 700);
+
+@each $name, $weight in $Lores9{
+    @font-face {
+        font-family: 'Lores9';
+        src: url(../fonts/LoRes9OT#{$name}.ttf);
+        font-weight: $weight;
+    }
+}
