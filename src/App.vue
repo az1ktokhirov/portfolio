@@ -24,7 +24,7 @@ export default {
     mounted() {
         setTimeout(() => {
             this.portfolio = true;
-        }, 2500);
+        }, 1500);
     }
 };
 </script>

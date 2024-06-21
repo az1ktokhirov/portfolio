@@ -77,9 +77,7 @@
                 </div>
             </router-link>
         </div>
-        <h1 class="header__content-title">
-            Hello, I'm <router-link @click="played" @mouseover="play" to="/about" class="header__content-title-link">Azizillo Tokhirov</router-link> and I'm Front-end Developer
-        </h1>
+        <h1 class="header__content-title">Hello🖐, I'm <span @click="downloadPDF" @mouseover="play">Azizillo Tokhirov</span> and I'm Front-end Developer</h1>
     </header>
 </template>
 
@@ -116,7 +114,16 @@ export default {
             document.querySelector(".header__content").classList.remove("hover-bg");
         }
 
-        return { play, played, addHoverBg, removeHoverBg };
+        function downloadPDF() {
+            const link = document.createElement("a");
+            link.href = "../assets/files/my-resume.pdf"; // public papkasi ichida joylashgan faylga nisbatan yo'l
+            link.download = "Azizillo_Tokhirov_Resume.pdf"; // Yuklab olish fayl nomi
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        return { play, played, addHoverBg, removeHoverBg, downloadPDF };
     },
 };
 </script>
