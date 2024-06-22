@@ -762,6 +762,7 @@
     }
     .about__content {
         &-top {
+            height: 100vh;
             padding: 0 0 20px;
             &-title {
                 background: url(../images/floating_mac.gif) center no-repeat;
