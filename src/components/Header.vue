@@ -116,7 +116,7 @@ export default {
 
         function downloadPDF() {
             const link = document.createElement("a");
-            link.href = "../assets/files/my-resume.pdf"; // public papkasi ichida joylashgan faylga nisbatan yo'l
+            link.href = "/public/my-resume.pdf"; // public papkasi ichida joylashgan faylga nisbatan yo'l
             link.download = "Azizillo_Tokhirov_Resume.pdf"; // Yuklab olish fayl nomi
             document.body.appendChild(link);
             link.click();
