@@ -154,11 +154,11 @@
             text-align: center;
             font-size: 24px;
             line-height: 24px;
-            color: #ff6549;
+            color: #ff823a;
             -webkit-text-stroke: 0.4px;
 
             & span {
-                color: #ff6549;
+                color: #ff823a;
                 transition: 0.5s;
                 cursor: pointer;
                 text-decoration: underline;
@@ -313,13 +313,13 @@
                     text-shadow: 1px 1px #00ff7c, 2px 2px #00ff7c, 3px 3px #00ff7c, 4px 4px #026c52, 5px 5px #026c52, 6px 6px #026c52;
                     -webkit-text-stroke: 1px darkcyan;
                     color: darkcyan;
-                    background: url(../images/floating_mac.gif) top no-repeat;
+                    background: url(../images/floating_mac.gif) center no-repeat;
                 }
             }
             &-link {
                 position: relative;
-                width: 180px;
-                height: 180px;
+                width: 150px;
+                height: 150px;
                 animation: jump 1s linear infinite;
                 & img {
                     width: 100%;
@@ -561,6 +561,11 @@
             &-item {
                 display: none;
                 font-size: 70px;
+                color: #ff823a;
+                -webkit-text-stroke: 2px #fdd835;
+                &:hover {
+                    -webkit-text-stroke: 2px #ff823a;
+                }
             }
         }
         &-title {
@@ -594,13 +599,15 @@
             display: none;
             font-size: 60px;
             line-height: 90px;
+            -webkit-text-stroke: 1px transparent;
+            color: #00ff7c;
         }
     }
     .hover-marquee {
         &:hover {
             animation: none;
             -webkit-animation: none;
-}
+        }
     }
 
     .marquee {
@@ -622,12 +629,11 @@
         background: linear-gradient(0deg, #5a3e40 50%, #f34021 80%);
         &__content {
             background-size: 400px 200px;
-            gap: 40px;
+            gap: 20px;
             &-link-list {
                 gap: 30px;
                 &-item {
-                    font-size: 110px;
-                    line-height: 100px;
+                    font-size: 50px;
                 }
             }
 
@@ -650,8 +656,7 @@
         background-size: 470px;
         gap: 40px;
         &-link-list-item {
-            font-size: 130px;
-            line-height: 110px;
+            font-size: 50px;
         }
     }
 
@@ -684,6 +689,7 @@
         &-top {
             &-title {
                 font-size: 80px;
+                padding-top: 180px;
                 & span {
                     font-size: 60px;
                 }
@@ -712,11 +718,11 @@
 @media screen and (max-width: 576px) {
     .header {
         &__content {
+            gap: 10px;
             background-size: 300px 150px;
             &-link-list {
                 &-item {
-                    font-size: 70px;
-                    line-height: 90px;
+                    font-size: 40px;
                 }
             }
 
@@ -734,8 +740,7 @@
         background-size: 300px;
         gap: 30px;
         &-link-list-item {
-            font-size: 90px;
-            line-height: 100px;
+            font-size: 30px;
         }
     }
 
@@ -767,9 +772,15 @@
     .about__content {
         &-top {
             &-title {
-                font-size: 80px;
+                background: url(../images/floating_mac.gif) center no-repeat;
+                background-size: 300px;
+                font-size: 40px;
                 & span {
-                    font-size: 60px;
+                    font-size: 30px;
+                }
+                &:hover{
+                    background: url(../images/floating_mac.gif) center no-repeat;
+                    background-size: 300px;
                 }
             }
             &-link {
