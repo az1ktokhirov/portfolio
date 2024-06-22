@@ -30,6 +30,12 @@
                 <h4 class="about__content-bottom-list-item scss-item">Scss</h4>
                 <h4 class="about__content-bottom-list-item"></h4>
             </div>
+            <div class="about__content-bottom-resume">
+                <p @click="downloadPDF">
+                    Click to Download <br />
+                    My Resume!
+                </p>
+            </div>
         </div>
     </div>
 </template>
@@ -50,15 +56,23 @@ export default {
         }
 
         function scrollToAboutMe() {
-            const aboutMe = document.getElementById('aboutMe');
-            const navHeight = document.querySelector('nav').offsetHeight;
+            const aboutMe = document.getElementById("aboutMe");
+            const navHeight = document.querySelector("nav").offsetHeight;
             window.scrollTo({
                 top: aboutMe.offsetTop - navHeight,
-                behavior: 'smooth'
+                behavior: "smooth",
             });
         }
+        function downloadPDF() {
+            const link = document.createElement("a");
+            link.href = "/public/my-resume.pdf";
+            link.download = "Azizillo_Tokhirov_Resume.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
 
-        return { play, scrollToAboutMe };
-    }
+        return { play, scrollToAboutMe, downloadPDF };
+    },
 };
 </script>

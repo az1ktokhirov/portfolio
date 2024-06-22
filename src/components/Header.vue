@@ -114,15 +114,6 @@ export default {
             document.querySelector(".header__content").classList.remove("hover-bg");
         }
 
-        function downloadPDF() {
-            const link = document.createElement("a");
-            link.href = "/public/my-resume.pdf"; // public papkasi ichida joylashgan faylga nisbatan yo'l
-            link.download = "Azizillo_Tokhirov_Resume.pdf"; // Yuklab olish fayl nomi
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-
         return { play, played, addHoverBg, removeHoverBg, };
     },
 };
