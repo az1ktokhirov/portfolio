@@ -168,12 +168,11 @@
                     font-size: 30px;
                 }
             }
-
         }
     }
 
     &__content.hover-bg {
-        background: url("../images/bttf_hoverboard.gif") bottom no-repeat;
+        background: url("../images/bttf_hoverboard.gif") center no-repeat;
     }
 }
 
@@ -247,7 +246,7 @@
         background: url(../images/nature-bg.gif) center no-repeat;
         gap: 70px;
         z-index: 3;
-        
+
         &-link {
             cursor: url(../images/cursor2.svg), auto;
             &-list {
@@ -255,7 +254,7 @@
                 align-items: center;
                 gap: 100px;
                 white-space: nowrap;
-                
+
                 &-item {
                     display: inline-block;
                     margin-right: 20px;
@@ -271,26 +270,6 @@
             &:hover .project__content-link-list-item {
                 -webkit-text-stroke: 1px transparent;
                 color: #00ff7c;
-            }
-        }
-
-        &-title {
-            margin-top: 100px;
-            text-align: center;
-            font-size: 24px;
-            line-height: 24px;
-            color: brown;
-            -webkit-text-stroke: 0.4px;
-
-            &-link {
-                color: brown;
-                transition: 0.5s;
-                cursor: pointer;
-
-                &:hover {
-                    font-size: 30px;
-                    text-decoration: underline;
-                }
             }
         }
     }
@@ -355,7 +334,7 @@
                     line-height: 25px;
                     color: darkcyan;
                 }
-                &:hover{
+                &:hover {
                     cursor: url(../images/pointer3.svg), auto;
                 }
             }
@@ -471,25 +450,14 @@
 }
 
 .loader {
-    background: linear-gradient(0deg, #DC0027 15%, #F7E901 45%);
+    cursor: url(../images/cursor.svg), auto;
+    background: linear-gradient(0deg, #dc0027 15%, #f7e901 45%);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     place-items: center;
-
-    &__video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -1;
-    }
 
     &__content {
         position: relative;
@@ -502,12 +470,21 @@
         width: 100%;
         height: 100%;
         padding-top: 100px;
+        &-img {
+            width: 300px;
+            height: 300px;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
 
         &-link {
-            color: #DC0027;
+            cursor: url(../images/pointer.svg), auto;
+            color: #dc0027;
             font-size: 30px;
-            -webkit-text-stroke: 1px #F7E901;
-            text-shadow: 1px 1px #DC0027, 2px 2px #DC0027, 3px 3px #ffd740, 4px 4px #ffd740;
+            -webkit-text-stroke: 1px #f7e901;
+            text-shadow: 1px 1px #dc0027, 2px 2px #dc0027, 3px 3px #ffd740, 4px 4px #ffd740;
             transition: 0.2s;
             animation: opacity 0.2s ease-in-out infinite alternate;
         }
@@ -524,8 +501,36 @@
         }
     }
 }
+.about-loader {
+    cursor: url(../images/cursor3.svg), auto;
+    background: linear-gradient(0deg, #008b8b 35%, #75ff93 65%);
+    &-link {
+        cursor: url(../images/pointer3.svg), auto;
+        color: #00dcb0;
+        font-size: 30px;
+        -webkit-text-stroke: 1px #008b8b;
+        text-shadow: 1px 1px #008b8b, 2px 2px #008b8b, 3px 3px #026c52, 4px 4px #026c52;
+        transition: 0.2s;
+        animation: opacity 0.2s ease-in-out infinite alternate;
+    }
+}
+.projects-loader {
+    cursor: url(../images/cursor2.svg), auto;
+    background: #385880;
+    &-link {
+        cursor: url(../images/pointer2.svg), auto;
+        color: #00ff7c;
+        font-size: 30px;
+        -webkit-text-stroke: 1.5px #385880;
+        text-shadow: 1px 1px #00ff7c, 2px 2px #00ff7c, 3px 3px #00ff7c, 4px 4px #385880;
+        transition: 0.2s;
+        animation: opacity 0.2s ease-in-out infinite alternate;
+    }
+}
 
 .back {
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 0;
     right: 0;
@@ -533,18 +538,16 @@
     justify-content: center;
     align-items: center;
     z-index: 4;
+    background-color: #c0f0f8;
+    text-align: center;
     &-icon {
+        cursor: url(../images/pointer2.svg), auto;
         font-size: 70px;
-        background-color: wheat;
         color: transparent;
-        -webkit-text-stroke: 3px #767676;
-        margin: 0;
-        padding: 0;
-        
+        -webkit-text-stroke: 3px #385880;
         &:hover {
-            cursor: url(../images/pointer2.svg), auto;
             -webkit-text-stroke: 1px transparent;
-            color: #767676;
+            color: #385880;
         }
     }
 }
@@ -553,14 +556,18 @@
     .header__content {
         background-size: 700px 400px;
         gap: 40px;
-        &-link-list-item {
-            font-size: 150px;
+        &-link-list {
+            justify-content: center;
+            &-item {
+                display: none;
+                font-size: 70px;
+            }
         }
         &-title {
             font-size: 20px;
             line-height: 20px;
-            &-link:hover {
-                font-size: 25px;
+            & span:hover {
+                font-size: 22px;
             }
         }
     }
@@ -568,9 +575,9 @@
         &-top-title {
             font-size: 100px;
             text-shadow: 1px 1px #00ff7c, 2px 2px #00ff7c, 3px 3px #00ff7c, 4px 4px #026c52, 5px 5px #026c52, 6px 6px #026c52;
-                    -webkit-text-stroke: 1px darkcyan;
-                    color: darkcyan;
-                    background: url(../images/floating_mac.gif) top no-repeat;
+            -webkit-text-stroke: 1px darkcyan;
+            color: darkcyan;
+            background: url(../images/floating_mac.gif) top no-repeat;
             & span {
                 font-size: 70px;
             }
@@ -580,12 +587,209 @@
             line-height: 65px;
         }
     }
-    .project__content{
+    .project__content {
         gap: 50px;
         background-size: 650px 400px;
-        &-link-list-item{
-            font-size: 150px;
-            line-height: 120px;
+        &-link-list-item {
+            display: none;
+            font-size: 60px;
+            line-height: 90px;
+        }
+    }
+    .hover-marquee {
+        &:hover {
+            animation: none;
+            -webkit-animation: none;
+}
+    }
+
+    .marquee {
+        animation: none;
+        -webkit-animation: none;
+    }
+    .marquee2 {
+        animation: none;
+        -webkit-animation: none;
+    }
+
+    .default-link {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        background: linear-gradient(0deg, #5a3e40 50%, #f34021 80%);
+        &__content {
+            background-size: 400px 200px;
+            gap: 40px;
+            &-link-list {
+                gap: 30px;
+                &-item {
+                    font-size: 110px;
+                    line-height: 100px;
+                }
+            }
+
+            &-title {
+                font-size: 18px;
+                line-height: 20px;
+                & span {
+                    &:hover {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &__content.hover-bg {
+            background: none;
+        }
+    }
+
+    .project__content {
+        background-size: 470px;
+        gap: 40px;
+        &-link-list-item {
+            font-size: 130px;
+            line-height: 110px;
+        }
+    }
+
+    .back {
+        width: 80px;
+        height: 80px;
+        &-icon {
+            font-size: 50px;
+        }
+    }
+    .loader {
+        &__content {
+            gap: 30px;
+            &-img {
+                width: 200px;
+                height: 200px;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .nav {
+        &-not-link {
+            display: none;
+        }
+    }
+    .about__content {
+        &-top {
+            &-title {
+                font-size: 80px;
+                & span {
+                    font-size: 60px;
+                }
+            }
+            &-link {
+                width: 100px;
+                height: 100px;
+                &::before {
+                    top: 0;
+                    left: 2%;
+                    content: "About Me!";
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: darkcyan;
+                }
+            }
+        }
+        &-bottom {
+            padding: 40px 20px;
+            &-text {
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .header {
+        &__content {
+            background-size: 300px 150px;
+            &-link-list {
+                &-item {
+                    font-size: 70px;
+                    line-height: 90px;
+                }
+            }
+
+            &-title {
+                font-size: 16px;
+                line-height: 20px;
+                & span:hover {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .project__content {
+        background-size: 300px;
+        gap: 30px;
+        &-link-list-item {
+            font-size: 90px;
+            line-height: 100px;
+        }
+    }
+
+    .back {
+        width: 80px;
+        height: 80px;
+        &-icon {
+            font-size: 50px;
+        }
+    }
+    .loader {
+        &__content {
+            gap: 30px;
+            &-img {
+                width: 200px;
+                height: 200px;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .nav {
+        &-not-link {
+            display: none;
+        }
+    }
+    .about__content {
+        &-top {
+            &-title {
+                font-size: 80px;
+                & span {
+                    font-size: 60px;
+                }
+            }
+            &-link {
+                width: 100px;
+                height: 100px;
+                &::before {
+                    top: 0;
+                    left: 2%;
+                    content: "About Me!";
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: darkcyan;
+                }
+            }
+        }
+        &-bottom {
+            padding: 40px 20px;
+            &-text {
+                font-size: 30px;
+            }
         }
     }
 }

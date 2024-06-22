@@ -3,7 +3,7 @@
         <div class="header__content" @mouseover="addHoverBg" @mouseleave="removeHoverBg">
             <router-link to="/about" class="header__content-link">
                 <div class="header__content-link-list marquee">
-                    <span @click="played" @mouseover="play" class="header__content-link-list-item">About</span>
+                    <span @click="played" @mouseover="play" class="header__content-link-list-item default-link">About</span>
                     <span @click="played" @mouseover="play" class="header__content-link-list-item">About</span>
                     <span @click="played" @mouseover="play" class="header__content-link-list-item">About</span>
                     <span @click="played" @mouseover="play" class="header__content-link-list-item">About</span>
@@ -28,7 +28,7 @@
             </router-link>
             <router-link to="/projects" class="header__content-link">
                 <div class="header__content-link-list marquee2">
-                    <span @click="played" @mouseover="play" class="header__content-link-list-item">Projects</span>
+                    <span @click="played" @mouseover="play" class="header__content-link-list-item default-link">Projects</span>
                     <span @click="played" @mouseover="play" class="header__content-link-list-item">Projects</span>
                     <span @click="played" @mouseover="play" class="header__content-link-list-item">Projects</span>
                     <span @click="played" @mouseover="play" class="header__content-link-list-item">Projects</span>
@@ -53,7 +53,7 @@
             </router-link>
             <router-link to="/contacts" class="header__content-link">
                 <div class="header__content-link-list marquee">
-                    <span @click="played" @mouseover="play" class="header__content-link-list-item">Contacts</span>
+                    <span @click="played" @mouseover="play" class="header__content-link-list-item default-link">Contacts</span>
                     <span @click="played" @mouseover="play" class="header__content-link-list-item">Contacts</span>
                     <span @click="played" @mouseover="play" class="header__content-link-list-item">Contacts</span>
                     <span @click="played" @mouseover="play" class="header__content-link-list-item">Contacts</span>

@@ -7,7 +7,9 @@
                 FRoNT-eND <br />
                 <span>DeVeLoPeR</span>
             </h2>
-            <div class="about__content-top-link" @click="scrollToAboutMe"><img src="../assets/images/arrow.svg" alt="" /></div>
+            <div class="about__content-top-link" @click="scrollToAboutMe">
+                <img src="../assets/images/arrow.svg" alt="" />
+            </div>
         </div>
         <div class="about__content-bottom" id="aboutMe">
             <p class="about__content-bottom-text">

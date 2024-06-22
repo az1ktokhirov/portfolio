@@ -10,6 +10,7 @@
     "@babel/plugin-transform-class-properties": "^7.24.7",
     "consolidate": "1.0.0",
     "core-js": "^3.8.3",
+    "cors": "^2.8.5",
     "glob": "9.0.0",
     "lru-cache": "7.7.1",
     "rimraf": "4.0.0",
