@@ -161,12 +161,7 @@
                 color: #ff823a;
                 transition: 0.5s;
                 cursor: pointer;
-                text-decoration: underline;
                 cursor: url(../images/pointer.svg), auto;
-                &:hover {
-                    color: #ff002f;
-                    font-size: 30px;
-                }
             }
         }
     }
@@ -416,7 +411,7 @@
                 transform: translateY(0%);
             }
             50% {
-                transform: translateY(50px);
+                transform: translateY(50%);
             }
             100% {
                 transform: translateY(0%);
@@ -561,6 +556,7 @@
             &-item {
                 display: none;
                 font-size: 70px;
+                line-height: 100px;
                 color: #ff823a;
                 -webkit-text-stroke: 2px #fdd835;
                 &:hover {
@@ -571,9 +567,6 @@
         &-title {
             font-size: 20px;
             line-height: 20px;
-            & span:hover {
-                font-size: 22px;
-            }
         }
     }
     .about__content {
@@ -640,11 +633,6 @@
             &-title {
                 font-size: 18px;
                 line-height: 20px;
-                & span {
-                    &:hover {
-                        font-size: 20px;
-                    }
-                }
             }
         }
         &__content.hover-bg {
@@ -729,9 +717,6 @@
             &-title {
                 font-size: 16px;
                 line-height: 20px;
-                & span:hover {
-                    font-size: 18px;
-                }
             }
         }
     }
@@ -768,9 +753,16 @@
         &-not-link {
             display: none;
         }
+        &__content {
+            padding: 5px 0;
+            &-link {
+                padding: 10px 0;
+            }
+        }
     }
     .about__content {
         &-top {
+            padding: 0 0 20px;
             &-title {
                 background: url(../images/floating_mac.gif) center no-repeat;
                 background-size: 300px;
@@ -778,28 +770,50 @@
                 & span {
                     font-size: 30px;
                 }
-                &:hover{
+                &:hover {
                     background: url(../images/floating_mac.gif) center no-repeat;
                     background-size: 300px;
                 }
             }
             &-link {
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
                 &::before {
                     top: 0;
                     left: 2%;
                     content: "About Me!";
-                    font-size: 15px;
-                    line-height: 20px;
+                    font-size: 12px;
+                    line-height: 5px;
                     color: darkcyan;
                 }
             }
         }
         &-bottom {
-            padding: 40px 20px;
+            padding: 30px 15px;
             &-text {
-                font-size: 30px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &-list {
+                grid-template-columns: repeat(2, 1fr);
+                &-title {
+                    grid-column: span 2;
+                    font-size: 30px;
+                }
+                &-item {
+                    font-size: 25px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .back {
+        width: 50px;
+        height: 50px;
+        &-icon {
+            font-size: 30px;
+            &:hover {
+                -webkit-text-stroke: 2px #385880;
             }
         }
     }

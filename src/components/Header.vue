@@ -77,7 +77,7 @@
                 </div>
             </router-link>
         </div>
-        <h1 class="header__content-title">Hello🖐, I'm <span @click="downloadPDF" @mouseover="play">Azizillo Tokhirov</span> and I'm Front-end Developer</h1>
+        <h1 class="header__content-title">Hello🖐, I'm <span>Azizillo Tokhirov</span> and I'm Front-end Developer</h1>
     </header>
 </template>
 
@@ -123,7 +123,7 @@ export default {
             document.body.removeChild(link);
         }
 
-        return { play, played, addHoverBg, removeHoverBg, downloadPDF };
+        return { play, played, addHoverBg, removeHoverBg, };
     },
 };
 </script>
