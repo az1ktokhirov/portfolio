@@ -1,5 +1,5 @@
 <template>
-    <header class="project">
+    <section class="project">
         <div class="project__content">
             <a href="https://lampshop.vercel.app/" class="project__content-link sun-light">
                 <div class="header__content-link-list hover-marquee">
@@ -71,7 +71,7 @@
         <div class="back">
             <router-link to="/"><p class="back-icon">X</p></router-link>
         </div>
-    </header>
+    </section>
 </template>
 
 <script>

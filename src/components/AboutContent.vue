@@ -65,7 +65,7 @@ export default {
         }
         function downloadPDF() {
             const link = document.createElement("a");
-            link.href = "@/public/my-resume.pdf";
+            link.href ="/my-resume.pdf";
             link.download = "Azizillo_Tokhirov_Resume.pdf";
             document.body.appendChild(link);
             link.click();

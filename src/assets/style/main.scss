@@ -84,7 +84,7 @@
 }
 
 .header {
-    background: linear-gradient(0deg, #5a3e40 40%, #f34021 70%);
+    background: linear-gradient(0deg, #2f3737 30%, #b05f45 50%, #987880 95%);
     width: 100%;
     height: 100vh;
     cursor: url(../images/cursor.svg), auto;
@@ -94,8 +94,8 @@
     flex-direction: column;
     justify-content: center;
     &__content {
-        background: url(../images/bg-gif.gif) center/cover no-repeat;
-        background-size: 700px 350px;
+        background: url(../images/nature-2.gif) center/cover no-repeat;
+        background-size: 650px 380px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -447,6 +447,38 @@
     @keyframes shift {
         100% {
             background-position: -100% 0;
+        }
+    }
+}
+.contacts {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/nature3.gif) center no-repeat;
+    background-size: 700px 400px;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &-link {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                &-img {
+                    width: 250px;
+                    height: 250px;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                & p {
+                    font-size: 100px;
+                }
+            }
         }
     }
 }
