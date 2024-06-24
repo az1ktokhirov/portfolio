@@ -31,10 +31,10 @@
                 <h4 class="about__content-bottom-list-item"></h4>
             </div>
             <div class="about__content-bottom-resume">
-                <p @click="downloadPDF">
+                <a href="/my-resume.pdf" download="CV">
                     Click to Download <br />
-                    My Resume!
-                </p>
+                    My Resume!</a
+                >
             </div>
         </div>
     </div>
@@ -63,16 +63,8 @@ export default {
                 behavior: "smooth",
             });
         }
-        function downloadPDF() {
-            const link = document.createElement("a");
-            link.href ="/my-resume.pdf";
-            link.download = "Azizillo_Tokhirov_Resume.pdf";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
 
-        return { play, scrollToAboutMe, downloadPDF };
+        return { play, scrollToAboutMe};
     },
 };
 </script>

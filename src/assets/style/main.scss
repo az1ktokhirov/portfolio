@@ -84,7 +84,7 @@
 }
 
 .header {
-    background: linear-gradient(0deg, #2f3737 30%, #b05f45 50%, #987880 95%);
+    background: linear-gradient(0deg, #2f3737 35%, #b05f45 55%, #987880 75%);
     width: 100%;
     height: 100vh;
     cursor: url(../images/cursor.svg), auto;
@@ -116,7 +116,7 @@
                     font-size: 170px;
                     text-transform: uppercase;
                     line-height: 150px;
-                    -webkit-text-stroke: 5px #fdd835;
+                    -webkit-text-stroke: 5px #fff200;
                     color: transparent;
 
                     &:hover {
@@ -126,26 +126,7 @@
             }
 
             &:hover .header__content-link-list-item {
-                color: #fdd835;
-                // animation: color 1s linear infinite;
-
-                // @keyframes color {
-                //     25% {
-                //         color: #f34021;
-                //     }
-
-                //     50% {
-                //         color: #F7E901;
-                //     }
-
-                //     75% {
-                //         color: #f34021;
-                //     }
-
-                //     100% {
-                //         color: #F7E901;
-                //     }
-                // }
+                color: #fff200;
             }
         }
 
@@ -154,26 +135,15 @@
             text-align: center;
             font-size: 24px;
             line-height: 24px;
-            color: #ff823a;
-            -webkit-text-stroke: 0.4px;
-
-            & span {
-                color: #ff823a;
-                transition: 0.5s;
-                cursor: pointer;
-                cursor: url(../images/pointer.svg), auto;
-            }
+            color: #fff200;
+            -webkit-text-stroke: 1.5px black;
         }
-    }
-
-    &__content.hover-bg {
-        background: url("../images/bttf_hoverboard.gif") center no-repeat;
     }
 }
 
 .hover-marquee {
     &:hover {
-        animation: marquee 5s linear infinite;
+        animation: marquee 4.5s linear infinite;
     }
 
     @keyframes marquee {
@@ -235,10 +205,12 @@
     background: #385880;
     position: relative;
     cursor: url(../images/cursor2.svg), auto;
+    background-image: url(../images/nature-bg.gif);
+    background-position: center;
+    background-repeat: no-repeat;
     &__content {
         display: flex;
         flex-direction: column;
-        background: url(../images/nature-bg.gif) center no-repeat;
         gap: 70px;
         z-index: 3;
 
@@ -346,7 +318,7 @@
             animation: shift 32s linear infinite;
             &-text {
                 font-weight: 700;
-                font-size: 60px;
+                font-size: 35px;
                 line-height: 85px;
                 color: darkslategray;
                 text-shadow: 1px 1px #00ff7c, 2px 2px darkslategray;
@@ -405,11 +377,13 @@
                 }
             }
             &-resume {
-                font-size: 25px;
-                text-align: center;
-                color: #00ff7c;
-                -webkit-text-stroke: 2px #008b8b;
-                animation: opacity 0.5s linear infinite;
+                & a {
+                    font-size: 25px;
+                    text-align: center;
+                    color: #00ff7c;
+                    -webkit-text-stroke: 2px #008b8b;
+                    animation: opacity 0.5s linear infinite;
+                }
             }
         }
 
@@ -419,7 +393,7 @@
             }
             50% {
                 transform: translateY(30%);
-}
+            }
             100% {
                 transform: translateY(0%);
             }
@@ -453,11 +427,16 @@
 .contacts {
     width: 100%;
     height: 100vh;
-    background: url(../images/nature3.gif) center no-repeat;
-    background-size: 700px 400px;
+    background: linear-gradient(0deg, #335858 30%, #7fb6a9 70%);
+
     &__content {
+        position: relative;
+        background: url(../images/nature3.gif) center no-repeat;
+        background-size: 700px 400px;
         display: flex;
         align-items: center;
+        height: 100vh;
+        gap: 100px;
         justify-content: space-between;
         &-list {
             display: flex;
@@ -466,17 +445,26 @@
             &-link {
                 display: flex;
                 align-items: center;
-                gap: 20px;
                 &-img {
-                    width: 250px;
-                    height: 250px;
+                    width: 150px;
+                    height: 150px;
                     & img {
                         width: 100%;
                         height: 100%;
                     }
                 }
                 & p {
-                    font-size: 100px;
+                    font-size: 45px;
+                    color: #def7f7;
+                    -webkit-text-stroke: 2px #295252;
+                }
+            }
+            &-link2 {
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                & p {
+                    color: #295252;
+                    -webkit-text-stroke: 1px #def7f7;
                 }
             }
         }
@@ -485,7 +473,7 @@
 
 .loader {
     cursor: url(../images/cursor.svg), auto;
-    background: linear-gradient(0deg, #dc0027 15%, #f7e901 45%);
+    background: linear-gradient(0deg, #2f3737 35%, #b05f45 55%, #987880 75%);
     position: fixed;
     top: 0;
     left: 0;
@@ -515,10 +503,10 @@
 
         &-link {
             cursor: url(../images/pointer.svg), auto;
-            color: #dc0027;
+            color: #2f3737;
             font-size: 30px;
-            -webkit-text-stroke: 1px #f7e901;
-            text-shadow: 1px 1px #dc0027, 2px 2px #dc0027, 3px 3px #ffd740, 4px 4px #ffd740;
+            -webkit-text-stroke: 1px #fff200;
+            text-shadow: 1px 1px #2f3737, 2px 2px #2f3737, 3px 3px #fff200, 4px 4px #fff200;
             transition: 0.2s;
             animation: opacity 0.2s ease-in-out infinite alternate;
         }
@@ -563,6 +551,19 @@
         animation: opacity 0.2s ease-in-out infinite alternate;
     }
 }
+.contacts-loader {
+    cursor: url(../images/cursor2.svg), auto;
+    background: linear-gradient(0deg, #335858 30%, #7fb6a9 70%);
+    &-link {
+        cursor: url(../images/pointer2.svg), auto;
+        color: #00ff7c;
+        font-size: 30px;
+        -webkit-text-stroke: 1.5px #385880;
+        text-shadow: 1px 1px #00ff7c, 2px 2px #00ff7c, 3px 3px #00ff7c, 4px 4px #385880;
+        transition: 0.2s;
+        animation: opacity 0.2s ease-in-out infinite alternate;
+    }
+}
 
 .back {
     width: 100px;
@@ -592,22 +593,28 @@
     .header__content {
         background-size: 700px 400px;
         gap: 40px;
-        &-link-list {
-            justify-content: center;
-            &-item {
-                display: none;
-                font-size: 70px;
-                line-height: 100px;
-                color: #ff823a;
-                -webkit-text-stroke: 2px #fdd835;
-                &:hover {
-                    -webkit-text-stroke: 2px #ff823a;
+        &-link {
+            cursor: url(../images/cursor.svg), auto;
+            &-list {
+                justify-content: center;
+                &-item {
+                    display: none;
+                    font-size: 70px;
+                    line-height: 100px;
+                    text-underline-offset: 10px;
+                    -webkit-text-stroke: 2px #fff200;
+                    &:hover {
+                        cursor: url(../images/pointer.svg), auto;
+                        -webkit-text-stroke: 2px #fff200;
+                    }
                 }
             }
         }
+
         &-title {
             font-size: 20px;
             line-height: 20px;
+            -webkit-text-stroke: 1px black;
         }
     }
     .about__content {
@@ -622,19 +629,63 @@
             }
         }
         &-bottom-text {
-            font-size: 40px;
-            line-height: 65px;
+            font-size: 25px;
+            line-height: 40px;
         }
     }
     .project__content {
         gap: 50px;
-        background-size: 650px 400px;
+        background-size: 700px 400px;
         &-link-list-item {
             display: none;
             font-size: 60px;
             line-height: 90px;
             -webkit-text-stroke: 1px transparent;
             color: #00ff7c;
+        }
+    }
+    .contacts {
+        &__content {
+            position: relative;
+            flex-direction: column;
+            align-items: start;
+            &-list {
+                gap: 10px;
+                &-link {
+                    gap: 10px;
+                    &-img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    & p {
+                        font-size: 40px;
+                    }
+                    &::after {
+                        color: #fff200;
+                        -webkit-text-stroke: 1px #295252;
+                        content: "< Click";
+                        font-size: 20px;
+                        animation: opacity 0.5s linear infinite;
+                        -webkit-animation: opacity 0.5s linear infinite;
+                    }
+                }
+                &-link2 {
+                    &::after {
+                        content: "Click >";
+                        font-size: 20px;
+                    }
+                }
+            }
+            &-list2 {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+            &-list1 {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
         }
     }
     .hover-marquee {
@@ -660,9 +711,9 @@
 
 @media screen and (max-width: 768px) {
     .header {
-        background: linear-gradient(0deg, #5a3e40 50%, #f34021 80%);
+        background: linear-gradient(0deg, #2f3737 44%, #b05f45 58%, #987880 70%);
         &__content {
-            background-size: 400px 200px;
+            background-size: 550px 300px;
             gap: 20px;
             &-link-list {
                 gap: 30px;
@@ -674,15 +725,13 @@
             &-title {
                 font-size: 18px;
                 line-height: 20px;
+                -webkit-text-stroke: 0.8px black;
             }
-        }
-        &__content.hover-bg {
-            background: none;
         }
     }
 
     .project__content {
-        background-size: 470px;
+        background-size: 550px 300px;
         gap: 40px;
         &-link-list-item {
             font-size: 50px;
@@ -739,7 +788,8 @@
         &-bottom {
             padding: 40px 20px;
             &-text {
-                font-size: 30px;
+                font-size: 20px;
+                line-height: 30px;
             }
         }
     }
@@ -748,7 +798,7 @@
     .header {
         &__content {
             gap: 10px;
-            background-size: 300px 150px;
+            background-size: 320px 170px;
             &-link-list {
                 &-item {
                     font-size: 40px;
@@ -758,12 +808,13 @@
             &-title {
                 font-size: 16px;
                 line-height: 20px;
+                -webkit-text-stroke: 0.5px black;
             }
         }
     }
 
     .project__content {
-        background-size: 300px;
+        background-size: 320px 170px;
         gap: 30px;
         &-link-list-item {
             font-size: 30px;

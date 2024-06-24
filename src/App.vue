@@ -9,6 +9,7 @@
 import Loader from './components/Loader.vue';
 import Loader2 from './components/Loader2.vue';
 import Loader3 from './components/Loader3.vue';
+import Loader4 from './components/Loader4.vue';
 
 export default {
     data() {
@@ -26,7 +27,7 @@ export default {
         async handleRouteChange(to, from) {
             this.loading = true;
             if (to.name === 'contacts') {
-                this.currentLoader = Loader2;
+                this.currentLoader = Loader4;
             } else if (to.name === 'about') {
                 this.currentLoader = Loader2;
             } else if (to.name === 'projects') {

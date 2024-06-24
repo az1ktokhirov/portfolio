@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <div class="header__content" @mouseover="addHoverBg" @mouseleave="removeHoverBg">
+        <div class="header__content">
             <router-link to="/about" class="header__content-link">
                 <div class="header__content-link-list marquee">
                     <span @click="played" @mouseover="play" class="header__content-link-list-item default-link">About</span>
@@ -106,15 +106,7 @@ export default {
             }
         }
 
-        function addHoverBg() {
-            document.querySelector(".header__content").classList.add("hover-bg");
-        }
-
-        function removeHoverBg() {
-            document.querySelector(".header__content").classList.remove("hover-bg");
-        }
-
-        return { play, played, addHoverBg, removeHoverBg, };
+        return { play, played };
     },
 };
 </script>
