@@ -588,6 +588,19 @@
         }
     }
 }
+.back2 {
+    background-color: #93d1c2;
+    &-icon {
+        cursor: url(../images/pointer2.svg), auto;
+        font-size: 70px;
+        color: transparent;
+        -webkit-text-stroke: 3px #335858;
+        &:hover {
+            -webkit-text-stroke: 1px transparent;
+            color: #335858;
+        }
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .header__content {
@@ -978,7 +991,6 @@
                         font-size: 15px;
                     }
                 }
-                
             }
             &-list2 {
                 position: absolute;

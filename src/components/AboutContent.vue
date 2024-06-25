@@ -24,10 +24,12 @@
                 <h4 class="about__content-bottom-list-item html-item">Html</h4>
                 <h4 class="about__content-bottom-list-item css-item">Css</h4>
                 <h4 class="about__content-bottom-list-item js-item">JS</h4>
-                <h4 class="about__content-bottom-list-item git-item">Git</h4>
+                <h4 class="about__content-bottom-list-item git-item">GitHub</h4>
                 <h4 class="about__content-bottom-list-item btrp-item">Bootstrap</h4>
                 <h4 class="about__content-bottom-list-item vue-item">Vue</h4>
                 <h4 class="about__content-bottom-list-item scss-item">Scss</h4>
+                <h4 class="about__content-bottom-list-item html-item">Git</h4>
+                <h4 class="about__content-bottom-list-item vue-item">Vuex</h4>
                 <h4 class="about__content-bottom-list-item"></h4>
             </div>
             <div class="about__content-bottom-resume">
