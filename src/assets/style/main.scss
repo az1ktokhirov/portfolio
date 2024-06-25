@@ -737,7 +737,9 @@
             font-size: 50px;
         }
     }
-
+    .contacts__content {
+        background-size: 550px 300px;
+    }
     .back {
         width: 80px;
         height: 80px;
@@ -812,7 +814,43 @@
             }
         }
     }
-
+    .contacts {
+        &__content {
+            background-size: 320px 170px;
+            &-list {
+                gap: 10px;
+                &-link {
+                    gap: 0px;
+                    &-img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    & p {
+                        font-size: 23px;
+                    }
+                    &::after {
+                        font-size: 15px;
+                    }
+                }
+                &-link2 {
+                    &::after {
+                        content: "Click >";
+                        font-size: 15px;
+                    }
+                }
+            }
+            &-list2 {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+            &-list1 {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
+        }
+    }
     .project__content {
         background-size: 320px 170px;
         gap: 30px;
@@ -906,6 +944,51 @@
             font-size: 30px;
             &:hover {
                 -webkit-text-stroke: 2px #385880;
+            }
+        }
+    }
+}
+@media screen and (max-width: 350px) {
+    .contacts {
+        &__content {
+            &-list {
+                gap: 5px;
+                &-link2 {
+                    &::after {
+                        content: "Click >";
+                        font-size: 15px;
+                    }
+                    & p {
+                        -webkit-text-stroke-width: 1px;
+                    }
+                }
+                &-link {
+                    gap: 5px;
+                    &-img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    & p {
+                        font-size: 15px;
+                        -webkit-text-stroke-width: 1px;
+                    }
+                    &::after {
+                        color: #fff200;
+                        -webkit-text-stroke: 1px #295252;
+                        font-size: 15px;
+                    }
+                }
+                
+            }
+            &-list2 {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+            &-list1 {
+                position: absolute;
+                left: 10px;
+                top: 10px;
             }
         }
     }
