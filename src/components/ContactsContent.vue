@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import Email from "@/assets/images/email.png";
-import Phone from "@/assets/images/phone.png";
+import Email from "../assets/images/email.png";
+import Phone from "../assets/images/phone.png";
 import Vkontakt from "../assets/images/VK.png";
 import X from "../assets/images/twitter.png";
 import TG from "../assets/images/telegram.png";

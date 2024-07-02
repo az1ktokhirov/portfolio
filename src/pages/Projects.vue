@@ -67,6 +67,28 @@
                     <span @click="played" class="project__content-link-list-item">Kicks</span>
                 </div>
             </a>
+            <a href="https://azt-store.vercel.app/" target="_blank" class="project__content-link kicks">
+                <div class="header__content-link-list hover-marquee ">
+                    <span @click="played" class="project__content-link-list-item default-link">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                    <span @click="played" class="project__content-link-list-item">AZT-store</span>
+                </div>
+            </a>
         </div>
         <div class="back">
             <router-link to="/"><p class="back-icon">X</p></router-link>
