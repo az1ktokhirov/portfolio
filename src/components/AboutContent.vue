@@ -33,7 +33,7 @@
                 <h4 class="about__content-bottom-list-item"></h4>
             </div>
             <div class="about__content-bottom-resume">
-                <a href="/my-resume.pdf" download="CV">
+                <a href="/Azizillo-Toxirov.pdf" download="CV">
                     Click to Download <br />
                     My Resume!</a
                 >
