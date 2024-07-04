@@ -376,6 +376,9 @@
                 }
             }
             &-resume {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 & a {
                     font-size: 25px;
                     text-align: center;
